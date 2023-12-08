@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_acrcloud/flutter_acrcloud.dart';
+import 'package:flutter_acrcloud_demo/screen/google_translate.dart';
 import 'package:flutter_acrcloud_demo/screen/text_to_speech_screen.dart';
 
 import 'screen/Recognizing_screen.dart';
@@ -29,6 +30,7 @@ class _MyAppState extends State<MyApp> {
     RecognizeScreen(),
     IdentifiedMusicScreen(),
     TTS(),
+    TranslateScreen(),
   ];
 
   @override
@@ -43,6 +45,7 @@ class _MyAppState extends State<MyApp> {
             navigationItem(navIndex, 0, Icons.record_voice_over, 'Recognizing'),
             navigationItem(navIndex, 1, Icons.list_alt, 'List'),
             navigationItem(navIndex, 2, Icons.speaker, 'TTS'),
+            navigationItem(navIndex, 3, Icons.book_online_outlined, 'Translate')      
           ],
           selectedLabelStyle: TextStyle(fontSize: 12, color:  Colors.red, fontWeight: FontWeight.w600),
           unselectedLabelStyle: TextStyle(fontSize: 12, color: Colors.grey),

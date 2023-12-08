@@ -15,7 +15,8 @@ dependencies:
   shared_preferences:
   sqflite: ^2.2.8+2
   flutter_tts: ^3.8.3
-
+  translator: ^0.1.7
+  http:
 dev_dependencies:
   flutter_test:
     sdk: flutter
